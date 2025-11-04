@@ -1,4 +1,4 @@
-let day="fridahjhj";
+let day="friday";
 
 switch(day){
     case "monday":
