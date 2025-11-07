@@ -31,9 +31,12 @@ while(num != 0){
 console.log(sum); */
 
 
-let n = 5;
+// let n = 5;
 
-do{
-    console.log("hiii everyone!");
-    n += 1;
-}while(n<=10)
+// do{
+//     console.log("hiii everyone!");
+//     n += 1;
+// }while(n<=10)
+
+
+
