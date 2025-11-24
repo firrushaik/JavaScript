@@ -1,0 +1,16 @@
+
+1) Undefined:
+      when we declared a variable in the code but did not assign the value before printing the variable value.
+
+Example:
+
+let myVariable; // Declared but not assigned a value
+console.log(myVariable); // Output: undefined
+
+
+2) Not defined:
+       when we did not declare the variable and try to call that variable.
+
+Example:
+
+// console.log(anotherVariable); // This would throw a ReferenceError: anotherVariable is not defined
