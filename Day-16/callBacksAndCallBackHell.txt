@@ -1,0 +1,58 @@
+What are Callbacks in JavaScript?
+In JavaScript, callbacks are functions that are passed as arguments from one function to another and are executed after the completion of a certain task. They are commonly used in asynchronous operations, such as reading files, making HTTP requests, or handling user input.
+
+A function can accept another function as a parameter.
+Callbacks allow one function to call another at a later time.
+A callback function can execute after another function has finished.
+How Do Callbacks Work in JavaScript?
+JavaScript executes code line by line (synchronously), but sometimes we need to delay execution or wait for a task to complete before running the next function. Callbacks help achieve this by passing a function that is executed later.
+
+Example of a Callback
+
+
+
+function greet(name, callback) {
+    console.log(`Hello, ${name}!`);
+    callback();  // calling the callback function
+}
+​
+function afterGreet() {
+    console.log('Greeting is complete!');
+}
+​
+greet('Anjali', afterGreet);
+
+Output
+Hello, Anjali!
+Greeting is complete!
+
+
+Callback Hell in JavaScript can be defined as the situation where we have nested callbacks(functions passed as arguments to other functions) which makes the code difficult to read and debug. The term "callback hell" describes the deep nesting of functions that can result in poor code readability and difficulty in debugging, especially when handling multiple asynchronous operations.
+
+
+
+
+function task1(callback) {
+    setTimeout(() => {
+        console.log("Task One completed");
+        callback();
+    },);
+}
+​
+function task2(callback) {
+    setTimeout(() => {
+        console.log("Task Two completed");
+        callback();
+    },);
+}
+​
+task1(function () {
+    task2(function () {
+        console.log("Both tasks completed");
+    });
+});
+
+Output
+Task One completed
+Task Two completed
+Both tasks completed
