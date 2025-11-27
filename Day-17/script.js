@@ -6,8 +6,16 @@ function checkAnagram() {
         document.getElementById("result").textContent = "Not Anagram";
         return;
       }else{
-         document.getElementById("result").textContent = "Anagrams";
-         return;
+        let sortedFirstWord = firstWord.split('').sort().join('');
+        let sortedSecondWord = secondWord.split('').sort().join('');
+
+        if(sortedFirstWord === sortedSecondWord){
+            document.getElementById("result").textContent = "Anagrams";
+        }else{
+             document.getElementById("result").textContent = "Not Anagrams";
+         
+        }
+         
       }
       
     }
