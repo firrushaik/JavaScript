@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 7px;
+    gap: 20px;
+    background-color: lightgreen;
+}
+h1{
+    color:rgb(1, 75, 1);
+}
+.enter-value{
+    height: 35px;
+    width:250px ;
+    margin-left: 70px;
+    text-align: center;
+    border: 2px solid rgb(1, 72, 1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttons{
+.clear-button, .submit-button{
+      background-color: rgb(3, 103, 3);
+      border-radius: 14px;
+      border: none;
+      color: white;
+      height: 30px;
+      width: 100px;
+      cursor: pointer;
+}
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 260px;
+    margin-left: 70px;
+    color: white;
+    border: none;
+    background-color: rgb(1, 66, 1);
+}
+
