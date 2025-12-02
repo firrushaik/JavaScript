@@ -1,0 +1,52 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-align: center;
+}
+h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.791);
+    height: 70px;
+    line-height: 70px;
+}
+
+.coice{
+    height: 195px;
+    width: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.791) ;
+}
+
+img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.score-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 50px;
+    font-size: 35px;
+
+}
