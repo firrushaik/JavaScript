@@ -41,6 +41,22 @@ console.log(a); // 100
 console.log(b); // 20
 console.log(c); // 30
 
+function print(){
+    var a = 10;
+   console.log(a);
+ }
+ print();
+// console.log(a); 
 
 
-
+function x(){
+    var a = 10;
+    function y(){
+        console.log(a);
+    }
+    a = 100;
+    return y;
+}
+const z = x();
+console.log(z);
+z();
