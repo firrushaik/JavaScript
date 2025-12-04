@@ -1,0 +1,13 @@
+body {
+  padding: 20px;
+}
+
+.table thead th {
+  background-color: #212529;
+  color: #fff;
+  border-color: #32383e;
+}
+
+.btn-add-student {
+  margin-bottom: 15px;
+}
