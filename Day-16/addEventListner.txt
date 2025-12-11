@@ -6,6 +6,8 @@ Syntax:
 
 element.addEventListener(event, function, useCapture);
 
+eg:
+
 <html>
 <head>
     <title>JavaScript addEventListeners</title>
