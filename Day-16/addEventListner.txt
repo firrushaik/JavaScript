@@ -160,24 +160,6 @@ eg:
 
 </html>
 
-Events:
-
-JavaScript Events are actions or occurrences that happen in the browser. 
-They can be triggered by various user interactions or by the browser itself.
-
-<html>
-<script>
-    function myFun() {
-        document.getElementById(
-            "gfg").innerHTML = "GeeksforGeeks";
-    }
-</script>
-
-<body>
-    <button onclick="myFun()">Click me</button>
-    <p id="gfg"></p>
-</body>
-</html>
 
 
 
