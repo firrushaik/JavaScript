@@ -43,3 +43,67 @@ They can be triggered by various user interactions or by the browser itself.
     <p id="gfg"></p>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JavaScript addEventListener() with Examples
+
+The addEventListener() method is used to attach an event handler to an element in the DOM (Document Object Model). It listens for specific events (such as click, keydown, or submit) on that element and executes a function when the event occurs.
+
+Syntax:
+
+element.addEventListener(event, function, useCapture);
+
+eg:
+
+<html>
+<head>
+    <title>JavaScript addEventListeners</title>
+</head>
+
+<body>
+    <button id="try">Click here</button>
+    <h1 id="text"></h1>
+    <script>
+        document.getElementById("try").addEventListener("click", function () {
+            document.getElementById("text").innerText = "GeeksforGeeks";
+        });
+    </script>
+</body>
+
+</html>
+
+Events:
+
+JavaScript Events are actions or occurrences that happen in the browser. 
+They can be triggered by various user interactions or by the browser itself.
+
+<html>
+<script>
+    function myFun() {
+        document.getElementById(
+            "gfg").innerHTML = "GeeksforGeeks";
+    }
+</script>
+
+<body>
+    <button onclick="myFun()">Click me</button>
+    <p id="gfg"></p>
+</body>
+</html>
